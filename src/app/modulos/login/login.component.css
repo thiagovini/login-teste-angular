@@ -1,0 +1,221 @@
+body{
+    font-family: 'Mukta', sans-serif;
+    height:100vh;
+    min-height:550px;
+    background-color: #b9fab9!important;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    overflow-y: hidden;
+}
+.login-reg-panel{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align:center;
+    width:70%;
+    right:0;left:0;
+    margin:auto;
+    height:400px;
+    background: linear-gradient(to right, #1e1ed1, #820ba7);
+}
+.white-panel{
+    background-color: rgba(255,255, 255, 1);
+    height:500px;
+    position:absolute;
+    top:-50px;
+    width:50%;
+    right:calc(50% - 50px);
+    transition:.5s ease-in-out;
+    z-index:0;
+    box-shadow: 0 0 15px 9px #00000096;
+}
+.login-reg-panel input[type="radio"]{
+    position:relative;
+    display:none;
+}
+
+.login-reg-panel h2[type="h2-login"]{
+    color:#999fe9;
+}
+
+
+.login-reg-panel h2[type="h2-register"]{
+    color:#cfb6b6;
+}
+
+.login-reg-panel #label-login {
+    background: #aa35ce;
+    padding:5px 5px;
+    width:100%;
+    display:block;
+    text-align:center;
+    border-radius:10px;
+    cursor:pointer;
+    color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    box-shadow: 0 5px 5px #00000021;
+}
+
+.login-reg-panel #label-register{
+    background: #4444cc;
+    padding:5px 5px;
+    width:100%;
+    display:block;
+    text-align:center;
+    border-radius:10px;
+    cursor:pointer;
+    color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    box-shadow: 0 5px 5px #00000021;
+}
+.login-info-box{
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    left:0;
+    position:absolute;
+    text-align:center;
+}
+.register-info-box{
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    right:0;
+    position:absolute;
+    text-align:center;
+    
+}
+.right-log{right:50px !important;}
+.login-show,
+.register-show{
+    z-index: 1;
+    display:none;
+    opacity:0;
+    transition:0.3s ease-in-out;
+    color:#585252;
+    text-align:left;
+    padding:50px;
+}
+
+.show-log-panel{
+    display:block;
+    opacity:0.9;
+}
+
+.email-login{
+    background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+    display: block;
+    /* text-indent: 40px; */
+}
+
+.password-login {
+    background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+    display: block;
+}
+
+
+.eyeicon-login {
+    position: absolute;
+    right: 60px;
+    top: 160px;
+    cursor: pointer;
+}
+
+.eyeicon-register-password {
+    position: absolute;
+    right: 60px;
+    top: 160px;
+    cursor: pointer;
+}
+
+.eyeicon-register-confirm-password {
+    position: absolute;
+    right: 60px;
+    top: 213px;
+    cursor: pointer;
+}
+
+.email-register , .password-register, .confirm-password-register{
+    background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+    display: block;
+    /* text-indent: 40px; */
+}
+
+.login-show button[type="btn-login"] {
+    width: 100%;
+	border-radius: 20px;
+	border: 1px solid;  
+	background: linear-gradient(to right, #1e1ed1, #820ba7);
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+
+.register-show button[type="btn-register"] {
+    width: 100%;
+	border-radius: 20px;
+	border: 1px solid;  
+	background: linear-gradient(to right, #1e1ed1, #820ba7);
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.login-show a{
+    display:inline-block;
+    padding:10px 0;
+    width:100%;
+    justify-content: end;
+    text-align: center;
+    color: #505055;
+}
+
+.credit {
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    color: #3B3B25;
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 99;
+}
+a{
+  text-decoration:none;
+  color:#2c7715;
+}

@@ -1,0 +1,41 @@
+<div class="login-reg-panel">
+    <div class="login-info-box">
+      <h2 type="h2-login">Have an account?</h2>
+      <label type="label" id="label-register" for="log-reg-show">Login</label>
+      <input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
+    </div>
+              
+    <div class="register-info-box">
+      <h2 type="h2-register">Don't have an account?</h2>
+      <label id="label-login" for="log-login-show">Register</label>
+      <input type="radio" name="active-log-panel" id="log-login-show">
+    </div>
+              
+    <div class="white-panel">
+      <div class="login-show">
+        <h1>Sign in</h1>
+        <input name="email" [(ngModel)]="email" class="email-login" placeholder="Ex. user@example.com" />
+        <input name="password" [(ngModel)]="password" class="password-login" [type]="changeTypePass?'password':'text'" required placeholder="Password"/>
+        <span class="eyeicon-login">
+        <mat-icon matSuffix (click)="showPass()">
+        {{visablePass?'visibility_off':'visibility'}}
+        </mat-icon>
+        </span>
+        <button type="btn-login" (click)="login()">Sign In</button>
+        <a href="#">Forgot your password?</a>
+      </div>
+
+      <div class="register-show">
+        <h1>Register</h1>
+        <input class="email-register" placeholder="Ex. user@example.com">
+        <input class="password-register" [type]="changeTypePass?'password':'text'" placeholder="Password">
+        <span class="eyeicon-register-password">
+          <mat-icon matSuffix (click)="showPass()">
+            {{visablePass?'visibility_off':'visibility'}}
+          </mat-icon>
+        </span>
+        <input ngModel class="confirm-password-register" [type]="changeTypePass?'password':'text'" placeholder="Confirm Password">
+        <button type="btn-register" (click)="register()">Register</button>
+      </div>
+    </div>
+  </div>
